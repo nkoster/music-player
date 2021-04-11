@@ -1,5 +1,4 @@
-# music-player
-Brad's music player example
+### music-player
 
 Please check Brad's Youtube video here: https://www.youtube.com/watch?v=QTHRWGn_sJw
 
