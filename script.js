@@ -59,12 +59,11 @@
     audio.currentTime = clickX / width * audio.duration
   }
   
-  playBtn.addEventListener('click', _ => 
-    musicContainer.classList.contains('play')
-      ? pauseSong()
-      : playSong()
-  )
+  const play = _ => musicContainer.classList.contains('play')
+    ? pauseSong()
+    : playSong()
   
+  playBtn.addEventListener('click', play)
   prevBtn.addEventListener('click', prevSong)
   nextBtn.addEventListener('click', nextSong)
   audio.addEventListener('timeupdate', updateProgress)
