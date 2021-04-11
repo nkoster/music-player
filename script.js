@@ -46,7 +46,11 @@
     loadSong(songs[songIndex])
     playSong()
   }
-  
+
+  const togglePlay = _ => musicContainer.classList.contains('play')
+    ? pauseSong()
+    : playSong()
+
   const updateProgress = evt => {
     const { duration, currentTime } = evt.srcElement
     const progressPercent = currentTime / duration * 100
@@ -59,11 +63,7 @@
     audio.currentTime = clickX / width * audio.duration
   }
   
-  const play = _ => musicContainer.classList.contains('play')
-    ? pauseSong()
-    : playSong()
-  
-  playBtn.addEventListener('click', play)
+  playBtn.addEventListener('click', togglePlay)
   prevBtn.addEventListener('click', prevSong)
   nextBtn.addEventListener('click', nextSong)
   audio.addEventListener('timeupdate', updateProgress)
