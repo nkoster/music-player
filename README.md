@@ -1,5 +1,7 @@
 ### music-player
 
+Brad Traversy's music player example.
+
 Please check Brad's Youtube video here: https://www.youtube.com/watch?v=QTHRWGn_sJw
 
 You can find the original Github stuff here: https://github.com/bradtraversy/vanillawebprojects/tree/master/music-player
